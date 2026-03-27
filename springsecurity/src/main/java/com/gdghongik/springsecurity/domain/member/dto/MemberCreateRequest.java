@@ -3,11 +3,10 @@ package com.gdghongik.springsecurity.domain.member.dto;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-@Getter
-@RequiredArgsConstructor
-public class MemberCreateRequest {
+public record MemberCreateRequest (
+        String username,
+        String password
 
-    private final String username;
+) {
 
-    private final String password;
 }
