@@ -1,4 +1,4 @@
 package com.gdghongik.springsecurity.domain.auth.dto;
 
-public record LoginRequest() {
+public record LoginRequest(String username, String password) {
 }

@@ -9,5 +9,9 @@ public record MemberInfoResponse(
         String username
 
 ) {
+    // 예: Member 엔티티 객체를 받아 생성하는 생성자
+    public MemberInfoResponse(Member member) {
+        this(member.getId(), member.getUsername());
+    }
 
 }
